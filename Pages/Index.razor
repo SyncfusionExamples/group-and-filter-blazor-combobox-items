@@ -2,7 +2,7 @@
 
 <div class="control_wrapper">
     <SfComboBox TValue="string" TItem="DropdownDataModel" PopupHeight="400px" PopupWidth="350px"
-                    Placeholder="Select a vegetable" DataSource="@ComboxBoxData"
+                    Placeholder="Select a vegetable" DataSource="@ComboBoxData"
                 AllowFiltering="true" IgnoreCase="false"
                 FilterType="Syncfusion.Blazor.DropDowns.FilterType.EndsWith">
         <ComboBoxFieldSettings Value="Id" Text="Vegetable"
@@ -19,7 +19,7 @@
         public string Category { get; set; }
     }
 
-    List<DropdownDataModel> ComboxBoxData = new List<DropdownDataModel>()
+    List<DropdownDataModel> ComboBoxData = new List<DropdownDataModel>()
     {
         new DropdownDataModel() {  Id = "item1", Vegetable = "Cabbage", Category = "Leafy and Salad" },
         new DropdownDataModel() {  Id = "item2", Vegetable = "Chickpea", Category = "Beans" },
